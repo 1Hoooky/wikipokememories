@@ -70,42 +70,50 @@ main {
     display: flex;
     margin-top: 68px;
     width: 800px;
-    margin-left: 23%;
+    margin-left: 12%;
 }
 
 .welcome-image img {
     width: 100%;
     border-radius: 20px;
 }
-
-aside {
-    position:absolute;
-    top: 45%;
-    right: 5%;
+.sociais {
     display: flex;
+    width: 300px;
+    height: 330px;
     flex-direction: column;
-    color: rgb(14, 13, 13);
-    text-align: center;
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    gap: .65rem;
+    margin-top: .5rem;
+    position:absolute;
+    bottom: 50px;
+    right: 60px;
 }
 
-aside a {
-    margin-bottom: 15px;
-}
-
-aside img {
-    width: auto;
+.sociais img {
+    width: 100%;
+    max-width: 16rem;
     height: auto;
-    transition: transform 0.2s;
-    border-radius: 20px;
+    border-radius: 12px;
+    filter: grayscale(.3);
+    transition: all .25s ease;
+}
+
+.sociais img:hover {
+    transform: scale(0.96);
+    filter: grayscale(.1);
 
 }
 
-aside img:hover {
-    transform: scale(0.96);
+.socialMedia__title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+    color: #717072;
+    letter-spacing: .02rem;
 }
 
 .hover-minimizeAndRotateContainer a,.hover-minimizeAndRotate img {
@@ -135,7 +143,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url(/images/fundo.jpg) no-repeat;
+    background: url(/images/ZestaObservandoVoce.jpg) no-repeat;
     filter: brightness(0.8);
     background-attachment: fixed;
     background-position: center;
@@ -146,14 +154,14 @@ body::before {
 
 .card {
     background: white;
-    box-shadow: rgba(24, 26, 31, 0.27) 0px 0px 0.25em,rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 0px 0.25em,rgb(90 125 188 / 5%) 0px 0.25em 1em;
     padding-bottom: .2rem;
     margin-bottom: .75rem;
     border-radius: 8px;
-    width: 1000px;
+    width: 1150px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-top: 20px;
 }
 
@@ -167,7 +175,7 @@ body::before {
     font-size: 1.15rem;
     font-weight: bold;
     border-radius: 8px 8px 0 0;
-    width: 1100px;
+    width: 1150px;
 }
 
 .card-container {
@@ -207,13 +215,14 @@ body::before {
 }
 
 .fastNav__linksContainer {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
-    gap: 2rem 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start
+    gap: 3rem 0;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: flex-start;
+    
 }
 
 .fastNav__linksContainer p {
@@ -225,7 +234,7 @@ body::before {
 }
 
 .fastNav__linksContainer .linkWithIcon__link,.fastNav__linksContainer a {
-    width: 19.5%;
+    display: flex;
     max-width: 13rem;
     padding: .65rem;
     box-sizing: border-box
@@ -233,7 +242,8 @@ body::before {
 
 .fastNav__linksContainer a img {
     width: 100%;
-    height: auto
+    height: auto;
+
 }
 .caixa {
     background: #fffffff0;
@@ -241,7 +251,12 @@ body::before {
     border: 5px solid transparent;
     border-image: url(/images/Borda-wiki.png) 15 stretch;
     display: block;
-    margin-left: 300px;
-    height: 94vh;
+    margin-left: 275px;
+    height: 93vh;
     width: 170vh;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
 }

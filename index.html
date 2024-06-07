@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki Pokememories</title>
+    <title>PokeMemories</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <header>
@@ -13,11 +15,24 @@
         </a>
         <nav class="main-nav">
             <ul>
-
+                <h3 class="titulos">Inicial</h3>
                 <li><a href="pages/equipe.html">Nossa Equipe</a></li>
                 <li><a href="pages/jogar.html">Jogar Pokememories</a></li>
                 <li><a href="pages/doacoes.html">Doações</a></li>
-                <h3 class="titulos">Gameplay</h3>
+                <li><a href="pages/doacoes.html">Criar Conta</a></li>
+                <li><a href="pages/doacoes.html">Regras</a></li>
+                <li><a href="pages/doacoes.html">Suporte</a></li>
+                <li><a href="pages/doacoes.html">Vip Shop</a></li>
+
+                <h3 class="titulos">Jogabilidade</h3>
+                <li><a href="pages/clans.html">Clãs</a></li>
+                <li><a href="pages/quests.html">Quests</a></li>
+                <li><a href="pages/pokemon.html">Pokémon</a></li>
+                <li><a href="pages/tasks.html">Tasks</a></li>
+                <li><a href="pages/npcs.html">NPC's</a></li>
+                <li><a href="pages/torneios.html">Torneios</a></li>
+                <li><a href="pages/missoesdiarias.html">Missões Diárias</a></li>
+                <h3 class="titulos">Sistemas</h3>
                 <li><a href="pages/clans.html">Clãs</a></li>
                 <li><a href="pages/quests.html">Quests</a></li>
                 <li><a href="pages/pokemon.html">Pokémon</a></li>
@@ -32,82 +47,94 @@
     </main>
     <section class="caixa">
         <div class="welcome-image">
-        <img src="images/boasvindas.png" alt="Bem-vindo à Wiki Pokémon">
+        <img src="images/boasvindas.png" alt="Bem-vindo à Wiki PokeMemories">
         </div>
-    <aside>
-        <p>REDES SOCIAIS</p>
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://discord.com" target="_blank">
-            <img src="images/discord.png" alt="Discord">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="Insta">
-        </a>
-        <a href="https://siteoficial.com" target="_blank">
-            <img src="images/siteoficial.png" alt="Site Oficial">
-        </a>
-    </aside>
-        <script src="js/scripts.js"></script>
-        <div class="card none" bis_skin_checked="1">
-        <!----><div class="card-title" bis_skin_checked="1">
+        <div class="sociais">
+            <a href="https://discord.gg/2cHgHmbQG8" class="socialMedia__link">
+                <img src="/images/discord.png" alt="Imagem link para o discord do memories">
+            </a>
+            <a href="https://www.facebook.com/pokememoriesoficial" class="socialMedia__link">
+                <img src="/images/facebook.png" alt="Imagem link para o facebook do memories">
+            </a>
+            <a href="https://www.instagram.com/pokememoriesofc" class="socialMedia__link">
+                <img src="/images/instagram.png" alt="Imagem link para o instagram do memories">
+            </a>
+        </div>
+        
+        <div class="card none">
+        <!----><div class="card-title">
         <!----><!----><span> Navegação rápida </span>
         <!----></div>
-        <!----><div class="card-container fastNav__linksContainer hover-minimizeAndRotateContainer" bis_skin_checked="1">
+        <!----><div class="card-container fastNav__linksContainer hover-minimizeAndRotateContainer">
         <a href="Quests" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
+        <div class="linkWithIcon__imageContainer">
         <img src="/images/quests.png" alt="Icone do link para pagina Quests">
         </div>
-        <img style="" src="/images/quests-title.png" alt="Icone do link para pagina Quests">
+        <img style="" src="/images/quest.png" alt="Icone do link para pagina Quests">
         </a>
         <a href="https://wiki.pokexgames.com/index.php/Pok%C3%A9mon" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
-        <img src="https://wiki.pokexgames.com/images/2/26/Pok%C3%A9mon-FastNav.png" alt="Icone do link para pagina Pokémon">
+        <div class="linkWithIcon__imageContainer">
+        <img src="/images/pokemon.png" alt="Icone do link para pagina Pokémon">
         </div>
-        <img style="margin-top:-.42rem" src="https://wiki.pokexgames.com/images/9/95/Pok%C3%A9mon-Title.png" alt="Icone do link para pagina Pokémon">
+        <img style="margin-top:-.42rem" src="/images/pokemon-title.png" alt="Icone do link para pagina Pokémon">
         </a>
         <a href="https://wiki.pokexgames.com/index.php/Tasks" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
-        <img src="https://wiki.pokexgames.com/images/3/3e/Tasks-FastNav.png" alt="Icone do link para pagina Tasks">
+        <div class="linkWithIcon__imageContainer">
+        <img src="/images/tasks.png" alt="Icone do link para pagina Tasks">
         </div>
-        <img style="" src="https://wiki.pokexgames.com/images/1/1e/Tasks-Title.png" alt="Icone do link para pagina Tasks">
+        <img style="" src="/images/tasks-title.png" alt="Icone do link para pagina Tasks">
         </a>
         <a href="https://wiki.pokexgames.com/index.php/Itens_Gerais" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
-        <img src="https://wiki.pokexgames.com/images/thumb/4/40/Itens-FastNav.png/150px-Itens-FastNav.png" alt="Icone do link para pagina Itens">
+        <div class="linkWithIcon__imageContainer">
+        <img src="/images/itens.png" alt="Icone do link para pagina Itens">
         </div>
-        <img style="" src="https://wiki.pokexgames.com/images/3/35/Itens-Title.png" alt="Icone do link para pagina Itens">
+        <img style="" src="/images/itens-title.png" alt="Icone do link para pagina Itens">
         </a>
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
+        <div class="linkWithIcon__imageContainer">
         </div>
         </a>
         <a href="https://wiki.pokexgames.com/index.php/Cl%C3%A3s" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
+        <div class="linkWithIcon__imageContainer">
         <img src="/images/cla.png" alt="Icone do link para pagina Clãs">
         </div>
-        <img style="margin-top:-.3rem" src="/images/cla-title.png" alt="Icone do link para pagina Clãs">
+        <img style="margin-top:-.3rem" src="/images/cla-t.png" alt="Icone do link para pagina Clãs">
         </a>
         <a href="https://wiki.pokexgames.com/index.php/Torneios" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
+        <div class="linkWithIcon__imageContainer">
         <img src="https://wiki.pokexgames.com/images/4/48/PvP-FastNav.png" alt="Icone do link para pagina Secret Lab">
         </div>
-        <img style="" src="https://wiki.pokexgames.com/images/b/b7/PvP-Title.png" alt="Icone do link para pagina Secret Lab">
+        <img style="" src="/images/torneios.png" alt="Icone do link para pagina Secret Lab">
         </a>
         <a href="Shinys" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
+        <div class="linkWithIcon__imageContainer">
         <img src="/images/shiny.png" alt="Icone do link para pagina Quests">
         </div>
-        <img style="" src="/images/quests-title.png" alt="Icone do link para pagina Quests">
+        <img style="" src="/images/shinys.png" alt="Icone do link para pagina Quests">
         </a>
         <a href="Shinys" class="linkWithIcon__link ">
-        <div class="linkWithIcon__imageContainer" bis_skin_checked="1">
-        <img src="/images/shiny.png" alt="Icone do link para pagina Quests">
+        <div class="linkWithIcon__imageContainer">
+        <img src="/images/staff.png" alt="Icone do link para pagina Quests">
         </div>
-        <img style="" src="/images/quests-title.png" alt="Icone do link para pagina Quests">
+        <img style="" src="/images/staffs.png" alt="Icone do link para pagina Quests">
         </a>
         </div>
         </div>
     </section>
+        <div class="discord-widget-container">
+            <iframe src="https://discord.com/widget?id=493826317381271552&theme=dark" width="300" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+        <style>
+            .discord-widget-container {
+                position: fixed;
+                top: 115px; /* Distância do topo */
+                right: 90px; /* Distância da direita */
+                z-index: 1000; /* Garantir que o widget esteja acima de outros elementos */
+            }
+            .discord-widget-container iframe {
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
 </body>
 </html>
