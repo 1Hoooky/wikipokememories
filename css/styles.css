@@ -159,6 +159,7 @@ body::before {
     margin-bottom: .75rem;
     border-radius: 8px;
     width: 1150px;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     margin-left: 60px;
@@ -166,16 +167,17 @@ body::before {
 }
 
 .card-title {
-    text-align: center;
+    text-align:center;
     background-color: #be0704;
     color: white;
-    padding: .25rem 1rem;
+    padding: .45rem 1rem;
     letter-spacing: .03rem;
     display:flex-box;
     font-size: 1.15rem;
     font-weight: bold;
     border-radius: 8px 8px 0 0;
     width: 1150px;
+    height: 30px;
 }
 
 .card-container {
@@ -265,7 +267,6 @@ div {
     position: absolute;
     top: 420px; /* Distância do topo */
     right: 83px; /* Distância da direita */
-    overflow:hidden
 }
 .discord-widget-container {
     position: absolute;
@@ -277,4 +278,63 @@ div {
     border: 0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wikitable {
+    background-color: #f5f5f5;
+    color: #000000;
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-radius: 10px;
+    border-collapse: separete;
+    border-spacing: 0;
+}
+
+.wikitable > tr > th,.wikitable > tr > td,.wikitable > * > tr > th,.wikitable > * > tr > td {
+    border: 1px solid #080808;
+    border-radius: 10px 0px 0px 0px;
+    padding: 0.8em 0.8em;
+    text-align: center;
+}
+
+.wikitable > tr > th,.wikitable > * > tr > th {
+    background-color: #867373;
+    text-align: center;
+}
+
+.wikitable > caption {
+    font-weight: bold
+}
+.b{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: -webkit-center;
+    font-family: 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lato', 'Liberation Sans', 'Noto Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+    
+}
+.boas{
+    margin-left: -300px;
+}
+.caixashiny {
+    background: #fffffff0;
+    border-radius: 6px;
+    border: 5px solid transparent;
+    border-image: url(/images/Borda-wiki.png) 15 stretch;
+    display: block;
+    margin-left: 265px;
+    height: 100vh;
+    width: 170vh;
+}
+.cardnone {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 0px 0.25em,rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    padding-bottom: .2rem;
+    margin-bottom: .75rem;
+    border-radius: 8px;
+    width: 1440px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-top: 20px;
 }
