@@ -322,7 +322,6 @@ div {
     border-image: url(/images/Borda-wiki.png) 15 stretch;
     display: block;
     margin-left: 265px;
-    height: 100vh;
     width: 170vh;
 }
 .cardnone {
@@ -336,5 +335,22 @@ div {
     display: flex;
     flex-wrap: wrap;
     margin-left: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.welcome-shiny img {
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+    width: 800px;
+    align-items:center;
+}
+
+.caixashiny {
+    padding: 20px;
+
+}
+.caixashiny img{
+    align-items: center;
+    margin-left: 27%;
 }
