@@ -1,0 +1,361 @@
+/* css/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color:#000000;
+    padding: 20px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: fixed;
+    font-size: 12px;
+    background: #fffffff0;
+    border-radius: 6px;
+    border: 5px solid transparent;
+    border-image: url(/images/Borda-wiki.png) 15 stretch;
+    margin-top: 39px;
+
+
+}
+header .titulos{
+    display: block;
+    color: #2e2b2b;
+    margin: 0.5em 0 0 0.66666667em;
+    border: 0;
+    padding: 0.25em 0;
+    font-size: 11px;
+    font-weight: normal;
+    cursor: default;
+    background-image: linear-gradient(to right, rgba(200, 204, 209, 0) 0, #c8ccd1 33%, #c8ccd1 66%, rgba(200, 204, 209, 0) 100%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    margin-left: 10px;
+}
+
+
+header .logo {
+    max-width: 80%;
+    cursor: pointer;
+}
+
+nav.main-nav ul, li, a {
+    text-align: left;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    width: 100%;
+}
+
+nav.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+}
+
+.welcome-image {
+    display: flex;
+    margin-top: 68px;
+    width: 800px;
+    margin-left: 15%;
+}
+
+.welcome-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+.sociais {
+    display: flex;
+    width: 300px;
+    height: 330px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .65rem;
+    margin-top: .5rem;
+    position:absolute;
+    bottom: 50px;
+    right: 80px;
+}
+
+.sociais img {
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+    border-radius: 12px;
+    filter: grayscale(.3);
+    transition: all .25s ease;
+}
+
+.sociais img:hover {
+    transform: scale(0.96);
+    filter: grayscale(.1);
+
+}
+
+.socialMedia__title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+    color: #717072;
+    letter-spacing: .02rem;
+}
+
+.hover-minimizeAndRotateContainer a,.hover-minimizeAndRotate img {
+    transition: transform .25s ease
+}
+
+.hover-minimizeAndRotateContainer a:hover,.hover-minimizeAndRotate img:hover {
+    transform: scale(.95) rotateZ(-4deg)
+}
+
+.hover-minimize img,.hover-minimize a img,.hover-minimize.initialPage__topicContainer {
+    transition: transform .25s ease
+}
+
+.hover-minimize:not(.initialPage__topicContainer) img:hover,.hover-minimize a img:hover,.hover-minimize.initialPage__topicContainer:hover {
+    transform: scale(.95)
+}
+
+body {
+    position: relative
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(/images/ZestaObservandoVoce.jpg) no-repeat;
+    filter: brightness(0.8);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1
+}
+
+.card {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 0px 0.25em,rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    padding-bottom: .2rem;
+    margin-bottom: .75rem;
+    border-radius: 8px;
+    width: 1150px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.card-title {
+    text-align:center;
+    background-color: #be0704;
+    color: white;
+    padding: .45rem 1rem;
+    letter-spacing: .03rem;
+    display:flex-box;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    width: 1550px;
+    height: 30px;
+}
+
+.card-container {
+    padding: .75rem 1rem
+}
+
+.linkWithIcon__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.linkWithIcon__imageContainer {
+    height: 10rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end
+}
+
+.linkWithIcon__imageContainer img {
+    width: 100%;
+    margin-bottom: .2rem;
+    height: auto;
+    max-height: 9rem
+}
+
+.linkWithIcon__link img {
+    height: 100%
+}
+
+.linkWithIcon__link span {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: .5rem
+}
+
+.fastNav__linksContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 3rem 0;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: flex-start;
+    
+}
+
+.fastNav__linksContainer p {
+    display: none
+}
+
+.fastNav__linksContainer a:not([href]) {
+    display: none
+}
+
+.fastNav__linksContainer .linkWithIcon__link,.fastNav__linksContainer a {
+    display: flex;
+    max-width: 13rem;
+    padding: .65rem;
+    box-sizing: border-box
+}
+
+.fastNav__linksContainer a img {
+    width: 100%;
+    height: auto;
+
+}
+.caixa {
+    background: #fffffff0;
+    border-radius: 6px;
+    border: 5px solid transparent;
+    border-image: url(/images/Borda-wiki.png) 15 stretch;
+    display: inline-block;
+    margin-left: 265px;
+    width: 1500px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.instagram-post {
+    position: absolute;
+    top: 420px; /* Distância do topo */
+    right: 83px; /* Distância da direita */
+}
+.discord-widget-container {
+    position: absolute;
+    top: 115px; /* Distância do topo */
+    right:103px; /* Distância da direita */
+    z-index: 1000; /* Garantir que o widget esteja acima de outros elementos */
+}
+.discord-widget-container iframe {
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wikitable {
+    background-color: #f5f5f5;
+    color: #000000;
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-radius: 10px;
+    border-collapse: separete;
+    border-spacing: 0;
+    width: 100vh;
+}
+
+.wikitable > tr > th,.wikitable > tr > td,.wikitable > * > tr > th,.wikitable > * > tr > td {
+    border: 1px solid #080808;
+    padding: 0.8em 0.8em;
+    text-align: center;
+}
+
+.wikitable > tr > th,.wikitable > * > tr > th {
+    background-color: #867373;
+    text-align: center;
+}
+
+.wikitable > caption {
+    font-weight: bold
+}
+.b{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: -webkit-center;
+    font-family: 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lato', 'Liberation Sans', 'Noto Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+    
+}
+.boas{
+    margin-left: -300px;
+}
+.caixashiny {
+    background: #fffffff0;
+    border-radius: 6px;
+    border: 5px solid transparent;
+    border-image: url(/images/Borda-wiki.png) 15 stretch;
+    display: block;
+    margin-left: 265px;
+    width: 170vh;
+}
+.cardnone {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 0px 0.25em,rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    padding-bottom: .2rem;
+    margin-bottom: .75rem;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 1490px;
+}
+
+.welcome-shiny img {
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+    width: 800px;
+    align-items:center;
+}
+
+.caixashiny {
+    padding: 20px;
+
+}
+.caixashiny img{
+    align-items: center;
+    margin-left: 27%;
+}
+.intro{
+    padding: 20px;
+}
+tbody a{
+}
