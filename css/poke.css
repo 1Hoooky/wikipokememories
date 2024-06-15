@@ -14,16 +14,14 @@ header {
     width: 150px;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    position: fixed;
+    position: absolute;
     font-size: 12px;
     background: #fffffff0;
     border-radius: 6px;
     border: 5px solid transparent;
     border-image: url(/images/Borda-wiki.png) 15 stretch;
     margin-top: 39px;
-
-
+    text-align: start;
 }
 header .titulos{
     display: block;
@@ -48,11 +46,13 @@ header .logo {
 }
 
 nav.main-nav ul, li, a {
-    text-align: left;
     list-style-type: none;
     text-decoration: none;
-    padding: 5px;
+    padding: 2px;
     width: 100%;
+    display: grid;
+    align-items: flex-start;
+    text-align: left;
 }
 
 nav.main-nav ul li a:hover {
